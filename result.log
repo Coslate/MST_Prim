@@ -1,0 +1,8 @@
+rm -rf ../exec_output/Prim.o
+rm -rf ../exec_output/Prim_main.o
+rm -rf ./tags
+g++ -g -Wall -O3  -c Prim.cpp -I ./include -o ../exec_output/Prim.o
+/usr/local/bin/ctags -R ./*
+/usr/local/bin/ctags -a ./include/*
+g++ -g -Wall -O3  -I ./include ../exec_output/Prim.o Prim_main.cpp -o ../exec_output/Prim_main.o
+../exec_output/Prim_main.o

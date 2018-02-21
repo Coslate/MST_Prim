@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	./Makefile	/^CC = g++$/;"	m
+CFLAGS	./Makefile	/^CFLAGS = -g -Wall -O3 $/;"	m
+COMPILE_FLAGS	./Makefile	/^COMPILE_FLAGS = -c$/;"	m
+CTAGS_UTIL	./Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
+INCLUDE_FILES	./Makefile	/^INCLUDE_FILES = .\/include$/;"	m
+INCLUDE_FLAGS	./Makefile	/^INCLUDE_FLAGS = -I $(INCLUDE_FILES)$/;"	m
+MAIN_OBJECT_EXEC	./Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
+MAIN_OBJECT_EXEC_MAIN	./Makefile	/^MAIN_OBJECT_EXEC_MAIN = $(MAIN_OBJECT_NAME_MAIN).o$/;"	m
+MAIN_OBJECT_EXEC_OUTPUT	./Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
+MAIN_OBJECT_NAME	./Makefile	/^MAIN_OBJECT_NAME = Prim$/;"	m
+MAIN_OBJECT_NAME_MAIN	./Makefile	/^MAIN_OBJECT_NAME_MAIN = Prim_main$/;"	m
+MAIN_OBJECT_SOURCE	./Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
+MAIN_OBJECT_SOURCE_MAIN	./Makefile	/^MAIN_OBJECT_SOURCE_MAIN = $(MAIN_OBJECT_NAME_MAIN).cpp$/;"	m
+_PRIM_H_	./include/Prim.h	2;"	d
+main	./Prim_main.cpp	/^int main(){$/;"	f
