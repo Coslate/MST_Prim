@@ -1,8 +1,8 @@
 #declare variable
 CC = g++
 CTAGS_UTIL = /usr/local/bin/
-INCLUDE_FILES = ./include
-INCLUDE_FLAGS = -I $(INCLUDE_FILES)
+INCLUDE_FILES = ./include ../Fibonacci_Heap_ex/include
+INCLUDE_FLAGS = $(foreach d, $(INCLUDE_FILES), -I $d)
 CFLAGS = -g -Wall -O3 
 COMPILE_FLAGS = -c
 MAIN_OBJECT_NAME_MAIN = Prim_main
