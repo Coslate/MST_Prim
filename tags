@@ -4,25 +4,26 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AdjList	./include/Prim.h	/^        AdjList() : LinkedListNode(), LinkedList(){};$/;"	f	class:AdjList
+AdjList	./include/Prim.h	/^class AdjList : public LinkedListNode, public LinkedList{$/;"	c
 CC	./Makefile	/^CC = g++$/;"	m
-CFLAGS	./Makefile	/^CFLAGS = -g -Wall -O3 $/;"	m
+CFLAGS	./Makefile	/^CFLAGS = -g -Wall -O3 -std=c++11 $/;"	m
 COMPILE_FLAGS	./Makefile	/^COMPILE_FLAGS = -c$/;"	m
 CTAGS_UTIL	./Makefile	/^CTAGS_UTIL = \/usr\/local\/bin\/$/;"	m
-ExchangeNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline void ExchangeNode(FTNode* &a, FTNode* &b){FTNode* tmp = a;a = b;b = tmp;};$/;"	f	class:Fibonacci_Heap
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode() : key(0), degree(0), mark(false), level(0), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode(const int value) : key(value), degree(0), mark(false), level(0), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode(const int value1, const int value2, const bool value3, const int value4) : key(value1), degree(value2), mark(value3), level(value4), parent(NULL), child(NULL), right_sibling(this), left_sibling(this){};$/;"	f	class:FTNode
-FTNode	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^class FTNode{$/;"	c
-Fibonacci_Heap	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        Fibonacci_Heap() : root_list_size(0), total_node_num(0), head_root_list(NULL), tail_root_list(NULL), min_pointer(NULL){};$/;"	f	class:Fibonacci_Heap
-Fibonacci_Heap	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^class Fibonacci_Heap{$/;"	c
-FindMin	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline FTNode* FindMin(){if(min_pointer != NULL){return min_pointer;}else{std::cout<<"Error : The Fibonacci_Heap is empty."<<std::endl;return NULL;}};$/;"	f	class:Fibonacci_Heap
-GetHeadRootList	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline FTNode* GetHeadRootList(){return head_root_list;};$/;"	f	class:Fibonacci_Heap
-GetKey	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline int GetKey(){return key;};$/;"	f	class:FTNode
-GetRootListSize	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline int     GetRootListSize(){return root_list_size;};$/;"	f	class:Fibonacci_Heap
-GetTailRootList	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline FTNode* GetTailRootList(){return tail_root_list;};$/;"	f	class:Fibonacci_Heap
-GetTotalNodeNum	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        inline int     GetTotalNodeNum(){return total_node_num;};$/;"	f	class:Fibonacci_Heap
-INCLUDE_FILES	./Makefile	/^INCLUDE_FILES = .\/include ..\/Fibonacci_Heap_ex\/include$/;"	m
+GetData	../Linked_List_ex/include/Linked_List.h	/^        inline int              GetData(){return data;};$/;"	f	class:LinkedListNode
+GetFristNode	../Linked_List_ex/include/Linked_List.h	/^        inline LinkedListNode*  GetFristNode(){return first;};$/;"	f	class:LinkedList
+GetLastNode	../Linked_List_ex/include/Linked_List.h	/^        inline LinkedListNode*  GetLastNode(){return last;};$/;"	f	class:LinkedList
+GetListSize	../Linked_List_ex/include/Linked_List.h	/^        inline int              GetListSize(){return size_of_list;};$/;"	f	class:LinkedList
+GetName	../Linked_List_ex/include/Linked_List.h	/^        inline std::string      GetName(){return name;};$/;"	f	class:LinkedListNode
+GetNext	../Linked_List_ex/include/Linked_List.h	/^        inline LinkedListNode*  GetNext(){return next;};$/;"	f	class:LinkedListNode
+INCLUDE_FILES	./Makefile	/^INCLUDE_FILES = .\/include ..\/Fibonacci_Heap_ex\/include ..\/Linked_List_ex\/include$/;"	m
 INCLUDE_FLAGS	./Makefile	/^INCLUDE_FLAGS = $(foreach d, $(INCLUDE_FILES), -I $d)$/;"	m
+LinkedList	../Linked_List_ex/include/Linked_List.h	/^        LinkedList() : first(NULL), last(NULL), size_of_list(0){};$/;"	f	class:LinkedList
+LinkedList	../Linked_List_ex/include/Linked_List.h	/^class LinkedList{$/;"	c
+LinkedListNode	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode() : data(0), name("NULL"), next(NULL){};$/;"	f	class:LinkedListNode
+LinkedListNode	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode(const int value) : data(value), name("NULL"), next(NULL){};$/;"	f	class:LinkedListNode
+LinkedListNode	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode(const int value, const std::string val_str) : data(value), name(val_str), next(NULL){};$/;"	f	class:LinkedListNode
+LinkedListNode	../Linked_List_ex/include/Linked_List.h	/^class LinkedListNode{$/;"	c
 MAIN_OBJECT_EXEC	./Makefile	/^MAIN_OBJECT_EXEC = $(MAIN_OBJECT_NAME).o$/;"	m
 MAIN_OBJECT_EXEC_MAIN	./Makefile	/^MAIN_OBJECT_EXEC_MAIN = $(MAIN_OBJECT_NAME_MAIN).o$/;"	m
 MAIN_OBJECT_EXEC_OUTPUT	./Makefile	/^MAIN_OBJECT_EXEC_OUTPUT = ..\/exec_output\/$/;"	m
@@ -30,19 +31,21 @@ MAIN_OBJECT_NAME	./Makefile	/^MAIN_OBJECT_NAME = Prim$/;"	m
 MAIN_OBJECT_NAME_MAIN	./Makefile	/^MAIN_OBJECT_NAME_MAIN = Prim_main$/;"	m
 MAIN_OBJECT_SOURCE	./Makefile	/^MAIN_OBJECT_SOURCE = $(MAIN_OBJECT_NAME).cpp$/;"	m
 MAIN_OBJECT_SOURCE_MAIN	./Makefile	/^MAIN_OBJECT_SOURCE_MAIN = $(MAIN_OBJECT_NAME_MAIN).cpp$/;"	m
-_FIBONACCI_HEAP_H_	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	2;"	d
+SUB_LINKED_LIST_SOURCE_PATH	./Makefile	/^SUB_LINKED_LIST_SOURCE_PATH = ..\/Linked_List_ex\/$/;"	m
+SetAdjList	./Prim.cpp	/^void AdjList::SetAdjList(LinkedListNode* const head_node, LinkedListNode* const inserted_node){$/;"	f	class:AdjList
+SetData	../Linked_List_ex/include/Linked_List.h	/^        inline void             SetData(const int val){data = val;};$/;"	f	class:LinkedListNode
+SetName	../Linked_List_ex/include/Linked_List.h	/^        inline void             SetName(const std::string val){name = val;};$/;"	f	class:LinkedListNode
+SetNext	../Linked_List_ex/include/Linked_List.h	/^        inline void             SetNext(LinkedListNode* const val){next = val;};$/;"	f	class:LinkedListNode
+_LINKED_LIST_H_	../Linked_List_ex/include/Linked_List.h	2;"	d
 _PRIM_H_	./include/Prim.h	2;"	d
-child	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* child;$/;"	m	class:FTNode
-degree	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int     degree;$/;"	m	class:FTNode
-head_root_list	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* head_root_list;$/;"	m	class:Fibonacci_Heap
-key	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int     key;$/;"	m	class:FTNode
-left_sibling	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* left_sibling;$/;"	m	class:FTNode
-level	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int     level;$/;"	m	class:FTNode
+collect_linked_list	./include/Prim.h	/^    std::vector<LinkedList*> collect_linked_list;$/;"	m	class:AdjList
+data	../Linked_List_ex/include/Linked_List.h	/^        int data;$/;"	m	class:LinkedListNode
+first	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode* first;$/;"	m	class:LinkedList
+last	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode* last;$/;"	m	class:LinkedList
 main	./Prim_main.cpp	/^int main(){$/;"	f
-mark	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        bool    mark;$/;"	m	class:FTNode
-min_pointer	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* min_pointer;$/;"	m	class:Fibonacci_Heap
-parent	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* parent;$/;"	m	class:FTNode
-right_sibling	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* right_sibling;$/;"	m	class:FTNode
-root_list_size	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int root_list_size;$/;"	m	class:Fibonacci_Heap
-tail_root_list	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        FTNode* tail_root_list;$/;"	m	class:Fibonacci_Heap
-total_node_num	../Fibonacci_Heap_ex/include/Fibonacci_Heap.h	/^        int total_node_num;$/;"	m	class:Fibonacci_Heap
+map_linked_list	./include/Prim.h	/^    std::unordered_map<LinkedListNode*, LinkedList*> map_linked_list;$/;"	m	class:AdjList
+name	../Linked_List_ex/include/Linked_List.h	/^        std::string name;$/;"	m	class:LinkedListNode
+next	../Linked_List_ex/include/Linked_List.h	/^        LinkedListNode* next;$/;"	m	class:LinkedListNode
+size_of_list	../Linked_List_ex/include/Linked_List.h	/^        int size_of_list;$/;"	m	class:LinkedList
+total_list_size	./include/Prim.h	/^    int total_list_size;$/;"	m	class:AdjList
+~AdjList	./Prim.cpp	/^AdjList::~AdjList(){$/;"	f	class:AdjList
