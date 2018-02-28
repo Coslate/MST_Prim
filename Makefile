@@ -1,8 +1,10 @@
 #declare variable
 CC = g++
-CTAGS_UTIL = /usr/local/bin/
 INCLUDE_FILES = ./include ../Fibonacci_Heap_ex/include ../Linked_List_ex/include
 INCLUDE_FLAGS = $(foreach d, $(INCLUDE_FILES), -I $d)
+CTAGS_UTIL = /usr/local/bin/
+CTAGS_FILES = ./include ../Fibonacci_Heap_ex ../Linked_List_ex
+CTAGS_FLAGS = $(foreach d, $(CTAGS_FILES),-a $d/*)
 CFLAGS = -g -Wall -O3 -std=c++11 
 COMPILE_FLAGS = -c
 MAIN_OBJECT_NAME_MAIN = Prim_main
@@ -26,7 +28,7 @@ Linked_List : $(SUB_LINKED_LIST_SOURCE_PATH)Linked_List.cpp
 
 all_file_tags : 
 	$(CTAGS_UTIL)ctags -R ./*
-	$(CTAGS_UTIL)ctags -a $(INCLUDE_FILES)/*
+	$(CTAGS_UTIL)ctags $(CTAGS_FLAGS)
 
 clean :
 	rm -rf $(MAIN_OBJECT_EXEC_OUTPUT)Linked_List.o
