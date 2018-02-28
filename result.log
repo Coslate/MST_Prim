@@ -1,8 +1,166 @@
+rm -rf ../exec_output/Linked_List.o
 rm -rf ../exec_output/Prim.o
 rm -rf ../exec_output/Prim_main.o
 rm -rf ./tags
-g++ -g -Wall -O3  -c Prim.cpp -I ./include -o ../exec_output/Prim.o
+g++ -g -Wall -O3 -std=c++11  -c ../Linked_List_ex/Linked_List.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include -o ../exec_output/Linked_List.o
+g++ -g -Wall -O3 -std=c++11  -c ../Fibonacci_Heap_ex/Fibonacci_Heap.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include -o ../exec_output/Fibonacci_Heap.o
+g++ -g -Wall -O3 -std=c++11  -c Prim.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include -o ../exec_output/Prim.o
 /usr/local/bin/ctags -R ./*
-/usr/local/bin/ctags -a ./include/*
-g++ -g -Wall -O3  -I ./include ../exec_output/Prim.o Prim_main.cpp -o ../exec_output/Prim_main.o
+/usr/local/bin/ctags -a ./include/* -a ../Fibonacci_Heap_ex/* -a ../Linked_List_ex/*
+g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include ../exec_output/Linked_List.o ../exec_output/Fibonacci_Heap.o ../exec_output/Prim.o Prim_main.cpp -o ../exec_output/Prim_main.o
 ../exec_output/Prim_main.o
+-----------------LinkedListNode-----------------
+node_a = (2147483647, 0x931130)
+node_b = (2147483647, 0x931180)
+node_h = (2147483647, 0x9311d0)
+node_i = (2147483647, 0x931220)
+node_c = (2147483647, 0x931270)
+node_g = (2147483647, 0x9312c0)
+node_f = (2147483647, 0x931310)
+node_d = (2147483647, 0x931360)
+node_e = (2147483647, 0x9313b0)
+----------------All node-----------------
+all_node = [a, b, h, i, c, g, f, d, e]
+-----------------FTNode-----------------
+node_a_fib = (2147483647, 0x931520)
+node_b_fib = (2147483647, 0x931560)
+node_h_fib = (2147483647, 0x9315a0)
+node_i_fib = (2147483647, 0x9315e0)
+node_c_fib = (2147483647, 0x931620)
+node_g_fib = (2147483647, 0x931660)
+node_f_fib = (2147483647, 0x9316a0)
+node_d_fib = (2147483647, 0x9316e0)
+node_e_fib = (2147483647, 0x931720)
+-----------------map_node_ll2ft-----------------
+map_node_ll2ft[0x931130] = (2147483647, 0x931520)
+map_node_ll2ft[0x931180] = (2147483647, 0x931560)
+map_node_ll2ft[0x9311d0] = (2147483647, 0x9315a0)
+map_node_ll2ft[0x931220] = (2147483647, 0x9315e0)
+map_node_ll2ft[0x931270] = (2147483647, 0x931620)
+map_node_ll2ft[0x9312c0] = (2147483647, 0x931660)
+map_node_ll2ft[0x931310] = (2147483647, 0x9316a0)
+map_node_ll2ft[0x931360] = (2147483647, 0x9316e0)
+map_node_ll2ft[0x9313b0] = (2147483647, 0x931720)
+-----------------map_node_ft2ll-----------------
+map_node_ft2ll[0x931520] = (2147483647, 0x931130)
+map_node_ft2ll[0x931560] = (2147483647, 0x931180)
+map_node_ft2ll[0x9315a0] = (2147483647, 0x9311d0)
+map_node_ft2ll[0x9315e0] = (2147483647, 0x931220)
+map_node_ft2ll[0x931620] = (2147483647, 0x931270)
+map_node_ft2ll[0x931660] = (2147483647, 0x9312c0)
+map_node_ft2ll[0x9316a0] = (2147483647, 0x931310)
+map_node_ft2ll[0x9316e0] = (2147483647, 0x931360)
+map_node_ft2ll[0x931720] = (2147483647, 0x9313b0)
+-----------------map_node_st2ll-----------------
+map_node_st2ll[a] = (2147483647, 0x931130)
+map_node_st2ll[b] = (2147483647, 0x931180)
+map_node_st2ll[h] = (2147483647, 0x9311d0)
+map_node_st2ll[i] = (2147483647, 0x931220)
+map_node_st2ll[c] = (2147483647, 0x931270)
+map_node_st2ll[g] = (2147483647, 0x9312c0)
+map_node_st2ll[f] = (2147483647, 0x931310)
+map_node_st2ll[d] = (2147483647, 0x931360)
+map_node_st2ll[e] = (2147483647, 0x9313b0)
+-----------------Set Adjacent List of Graph(V, E)-----------------
+-----------------AdjList::PrintAdjList, node_a-----------------
+[4 8]
+[b h]
+[0x931e70 0x932060]
+first = 0x931e70
+last = 0x932060
+map_weight[a] = [4(0x931130, 0x931180), 8(0x931130, 0x9311d0)]
+-----------------AdjList::PrintAdjList, node_b-----------------
+[4 8 11]
+[a c h]
+[0x931f50 0x9321b0 0x932300]
+first = 0x931f50
+last = 0x932300
+map_weight[b] = [4(0x931180, 0x931130), 8(0x931180, 0x931270), 11(0x931180, 0x9311d0)]
+-----------------AdjList::PrintAdjList, node_h-----------------
+[8 11 1 7]
+[a b g i]
+[0x9320c0 0x932340 0x9323a0 0x932560]
+first = 0x9320c0
+last = 0x932560
+map_weight[h] = [8(0x9311d0, 0x931130), 11(0x9311d0, 0x931180), 1(0x9311d0, 0x9312c0), 7(0x9311d0, 0x931220)]
+-----------------AdjList::PrintAdjList, node_c-----------------
+[8 2 7 4]
+[b i d f]
+[0x932210 0x9328a0 0x932940 0x932a90]
+first = 0x932210
+last = 0x932a90
+map_weight[c] = [8(0x931270, 0x931180), 2(0x931270, 0x931220), 7(0x931270, 0x931360), 4(0x931270, 0x931310)]
+-----------------AdjList::PrintAdjList, node_i-----------------
+[7 6 2]
+[h g c]
+[0x9325c0 0x932860 0x9328e0]
+first = 0x9325c0
+last = 0x9328e0
+map_weight[i] = [7(0x931220, 0x9311d0), 6(0x931220, 0x9312c0), 2(0x931220, 0x931270)]
+-----------------AdjList::PrintAdjList, node_g-----------------
+[1 2 6]
+[h f i]
+[0x932400 0x9326d0 0x932820]
+first = 0x932400
+last = 0x932820
+map_weight[g] = [1(0x9312c0, 0x9311d0), 2(0x9312c0, 0x931310), 6(0x9312c0, 0x931220)]
+-----------------AdjList::PrintAdjList, node_d-----------------
+[7 14 9]
+[c f e]
+[0x9329a0 0x932b50 0x932d40]
+first = 0x9329a0
+last = 0x932d40
+map_weight[d] = [7(0x931360, 0x931270), 14(0x931360, 0x931310), 9(0x931360, 0x9313b0)]
+-----------------AdjList::PrintAdjList, node_e-----------------
+[10 9]
+[f d]
+[0x932c10 0x932d80]
+first = 0x932c10
+last = 0x932d80
+map_weight[e] = [10(0x9313b0, 0x931310), 9(0x9313b0, 0x931360)]
+-----------------AdjList::PrintAdjList, node_f-----------------
+[2 4 14 10]
+[g c d e]
+[0x932730 0x932ad0 0x932b10 0x932bb0]
+first = 0x932730
+last = 0x932bb0
+map_weight[f] = [2(0x931310, 0x9312c0), 4(0x931310, 0x931270), 14(0x931310, 0x931360), 10(0x931310, 0x9313b0)]
+-----------------Prim_Algorithm::InitialSet-----------------
+##################################
+#########      F0      ###########
+##################################
+(2147483647, 0x931560, 0  , False)
+##################################
+#########      F1      ###########
+##################################
+(2147483647, 0x9315a0, 0  , False)
+##################################
+#########      F2      ###########
+##################################
+(2147483647, 0x9315e0, 0  , False)
+##################################
+#########      F3      ###########
+##################################
+(2147483647, 0x931620, 0  , False)
+##################################
+#########      F4      ###########
+##################################
+(2147483647, 0x931660, 0  , False)
+##################################
+#########      F5      ###########
+##################################
+(2147483647, 0x9316a0, 0  , False)
+##################################
+#########      F6      ###########
+##################################
+(2147483647, 0x9316e0, 0  , False)
+##################################
+#########      F7      ###########
+##################################
+(2147483647, 0x931720, 0  , False)
+##################################
+#########      F8      ###########
+##################################
+(0  , 0x931520, 0  , False)
+It is destructor.
+It is AdjList destructor.

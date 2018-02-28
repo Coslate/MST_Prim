@@ -76,7 +76,7 @@ int main(){
     map_node_st2ll["b"] = node_b;
     map_node_st2ll["h"] = node_h;
     map_node_st2ll["i"] = node_i;
-    map_node_st2ll["c"] = node_g;
+    map_node_st2ll["c"] = node_c;
     map_node_st2ll["g"] = node_g;
     map_node_st2ll["f"] = node_f;
     map_node_st2ll["d"] = node_d;
@@ -163,23 +163,23 @@ int main(){
     a1.SetAdjList(node_f, node_e, 10);
     a1.SetAdjList(node_d, node_e, 9);
     std::cout<<"-----------------AdjList::PrintAdjList, node_a-----------------"<<std::endl;
-    a1.PrintAdjList(node_a, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_a, debug_addr, debug_name, debug_key);
     std::cout<<"-----------------AdjList::PrintAdjList, node_b-----------------"<<std::endl;
-    a1.PrintAdjList(node_b, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_b, debug_addr, debug_name, debug_key);
     std::cout<<"-----------------AdjList::PrintAdjList, node_h-----------------"<<std::endl;
-    a1.PrintAdjList(node_h, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_h, debug_addr, debug_name, debug_key);
     std::cout<<"-----------------AdjList::PrintAdjList, node_c-----------------"<<std::endl;
-    a1.PrintAdjList(node_c, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_c, debug_addr, debug_name, debug_key);
     std::cout<<"-----------------AdjList::PrintAdjList, node_i-----------------"<<std::endl;
-    a1.PrintAdjList(node_i, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_i, debug_addr, debug_name, debug_key);
     std::cout<<"-----------------AdjList::PrintAdjList, node_g-----------------"<<std::endl;
-    a1.PrintAdjList(node_g, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_g, debug_addr, debug_name, debug_key);
     std::cout<<"-----------------AdjList::PrintAdjList, node_d-----------------"<<std::endl;
-    a1.PrintAdjList(node_d, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_d, debug_addr, debug_name, debug_key);
     std::cout<<"-----------------AdjList::PrintAdjList, node_e-----------------"<<std::endl;
-    a1.PrintAdjList(node_e, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_e, debug_addr, debug_name, debug_key);
     std::cout<<"-----------------AdjList::PrintAdjList, node_f-----------------"<<std::endl;
-    a1.PrintAdjList(node_f, debug_addr, debug_name, debug_key);
+    a1.PrintAdjList(map_node_st2ll, node_f, debug_addr, debug_name, debug_key);
 
     
     std::cout<<"-----------------Prim_Algorithm::InitialSet-----------------"<<std::endl;
