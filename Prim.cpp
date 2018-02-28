@@ -39,3 +39,13 @@ void AdjList::PrintAdjList(LinkedListNode* const head_node, const bool debug_add
         std::cout<<"Warning : The head_node has no Adjacent List."<<std::endl;
     }
 }
+void Prim_Algorithm::InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<LinkedListNode*> &all_node, std::unordered_map<LinkedListNode*, FTNode*> &map_node_ll2ft){
+    for(size_t i=0;i<all_node.size();++i){
+        LinkedListNode* inserted_node_ll = all_node[i];
+        FTNode* inserted_node_fib = map_node_ll2ft[inserted_node_ll];
+        if(i==0){
+            inserted_node_fib->SetKey(0);
+        }
+        fib_heap_q.InsertArbitrary(inserted_node_fib);
+    }
+}

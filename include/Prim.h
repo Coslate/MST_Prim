@@ -19,4 +19,7 @@ class AdjList : public LinkedListNode, public LinkedList{
         inline LinkedList* ReadAdjList(LinkedListNode* const head_node){return map_linked_list[head_node];};
 };
 
+namespace Prim_Algorithm{
+    void InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<LinkedListNode*> &all_node, std::unordered_map<LinkedListNode*, FTNode*> &map_node_ll2ft);
+}
 #endif

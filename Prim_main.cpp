@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <cstring>
 #include <climits>
+#include <vector>
 #include <Prim.h>
 
 int main(){
@@ -11,6 +12,7 @@ int main(){
     
     //Declare a new adjacent list to represent Graph(V, E)
     AdjList a1;
+    Fibonacci_Heap fib_heap_q;
 
     //Generate the Graph(V, E)
     LinkedListNode* node_a = new LinkedListNode(INT_MAX, "a");
@@ -22,6 +24,17 @@ int main(){
     LinkedListNode* node_f = new LinkedListNode(INT_MAX, "f");
     LinkedListNode* node_d = new LinkedListNode(INT_MAX, "d");
     LinkedListNode* node_e = new LinkedListNode(INT_MAX, "e");
+
+    std::vector<LinkedListNode*> all_node;
+    all_node.push_back(node_a);
+    all_node.push_back(node_b);
+    all_node.push_back(node_h);
+    all_node.push_back(node_i);
+    all_node.push_back(node_c);
+    all_node.push_back(node_g);
+    all_node.push_back(node_f);
+    all_node.push_back(node_d);
+    all_node.push_back(node_e);
     
     //Generate the correspondent Fibonacci Node.
     FTNode* node_a_fib = new FTNode(node_a->GetData());
@@ -79,6 +92,17 @@ int main(){
     std::cout<<"node_f = ("<<node_f->GetData()<<", "<<node_f<<")"<<std::endl;
     std::cout<<"node_d = ("<<node_d->GetData()<<", "<<node_d<<")"<<std::endl;
     std::cout<<"node_e = ("<<node_e->GetData()<<", "<<node_e<<")"<<std::endl;
+    std::cout<<"----------------All node-----------------"<<std::endl;
+    for(size_t i=0;i<all_node.size();++i){
+        if(i == all_node.size()-1){
+            std::cout<<all_node[i]->GetName()<<"]"<<std::endl;
+        }else if(i == 0){
+            std::cout<<"all_node = ["<<all_node[i]->GetName()<<", ";
+        }else{
+            std::cout<<all_node[i]->GetName()<<", ";
+        }
+    }
+
     std::cout<<"-----------------FTNode-----------------"<<std::endl;
     std::cout<<"node_a_fib = ("<<node_a_fib->GetKey()<<", "<<node_a_fib<<")"<<std::endl;
     std::cout<<"node_b_fib = ("<<node_b_fib->GetKey()<<", "<<node_b_fib<<")"<<std::endl;
@@ -158,8 +182,9 @@ int main(){
     a1.PrintAdjList(node_f, debug_addr, debug_name, debug_key);
 
     
-
-
+    std::cout<<"-----------------Prim_Algorithm::InitialSet-----------------"<<std::endl;
+    Prim_Algorithm::InitialSet(fib_heap_q, all_node, map_node_ll2ft);
+    fib_heap_q.Traverse();
 
 
 
