@@ -16,10 +16,10 @@ class AdjList : public LinkedListNode, public LinkedList{
         AdjList() : LinkedListNode(), LinkedList(){};
         ~AdjList();
 
-        void               SetAdjList(LinkedListNode* const head_node, LinkedListNode* const inserted_node, const int weight);
-        void               PrintAdjList(std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, LinkedListNode* const head_node, const bool debug_addr = false, const bool debug_name = false, const bool debug_key = true);
-        inline LinkedList* ReadAdjList(LinkedListNode* const head_node){return map_linked_list[head_node];};
-        inline std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>>&                ReadMapWeight(){return map_weight;};
+        void                SetAdjList(LinkedListNode* const head_node, LinkedListNode* const inserted_node, const int weight);
+        void                PrintAdjList(std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, LinkedListNode* const head_node, const bool debug_addr = false, const bool debug_name = false, const bool debug_key = true);
+        inline LinkedList*  ReadAdjList(LinkedListNode* const head_node) {return map_linked_list[head_node];};
+        inline std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>>&                ReadMapWeight() {return map_weight;};
 };
 
 class MST_Edge{
@@ -42,6 +42,7 @@ class MST_Edge{
 
 namespace Prim_Algorithm{
     void InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<LinkedListNode*> &all_node, std::unordered_map<LinkedListNode*, FTNode*> &map_node_ll2ft);
-    void FindMST(Fibonacci_Heap &fib_heap_q, const std::vector<MST_Edge> &final_mst, std::unordered_map<FTNode*, LinkedListNode*> &map_node_ft2ll, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, const AdjList &adj_list);
+    bool CheckIsTheEdge(std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>> &map_weight, LinkedListNode* const candidate_parent, const int &edge_weight, LinkedListNode* const min_ll_node);
+    void FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> &final_mst, std::unordered_map<FTNode*, LinkedListNode*> &map_node_ft2ll, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, AdjList &adj_list);
 }
 #endif
