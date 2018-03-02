@@ -34,7 +34,7 @@ Delete	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^bool Fibonacci_Heap::Delete(FTN
 Delete	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::Delete(LinkedListNode* const deleted_node){$/;"	f	class:LinkedList
 Delete	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::Delete(const int value){$/;"	f	class:LinkedList
 ExtractMin	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^FTNode* Fibonacci_Heap::ExtractMin(){$/;"	f	class:Fibonacci_Heap
-FindMST	./Prim.cpp	/^void Prim_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> &final_mst, std::unordered_map<FTNode*, LinkedListNode*> &map_node_ft2ll, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, AdjList &adj_list){$/;"	f	class:Prim_Algorithm
+FindMST	./Prim.cpp	/^void Prim_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> &final_mst, std::unordered_map<FTNode*, LinkedListNode*> &map_node_ft2ll, std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, std::unordered_map<LinkedListNode*, FTNode*> map_node_ll2ft, AdjList &adj_list){$/;"	f	class:Prim_Algorithm
 GetAllData	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::GetAllData(int* const input_arr){$/;"	f	class:LinkedList
 GetData	./test.cpp	/^        inline int GetData(){return data;};$/;"	f	class:test_class
 HeapLink	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::HeapLink(FTNode* &y, FTNode* &x){$/;"	f	class:Fibonacci_Heap
@@ -82,6 +82,7 @@ Prim_Algorithm	./include/Prim.h	/^namespace Prim_Algorithm{$/;"	n
 PrintAdjList	./Prim.cpp	/^void AdjList::PrintAdjList(std::unordered_map<std::string, LinkedListNode*> &map_node_st2ll, LinkedListNode* const head_node, const bool debug_addr, const bool debug_name, const bool debug_key){$/;"	f	class:AdjList
 PrintList	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::PrintList(FTNode* const head_ptr, const int print_width, std::queue<FTNode*> &parent_queue){$/;"	f	class:Fibonacci_Heap
 PrintList	../Linked_List_ex/Linked_List.cpp	/^void LinkedList::PrintList(const bool debug_addr, const bool debug_name, const bool debug_key){$/;"	f	class:LinkedList
+PrintMST	./Prim.cpp	/^void Prim_Algorithm::PrintMST(const std::vector<MST_Edge*> &final_mst){$/;"	f	class:Prim_Algorithm
 ReadAdjList	./include/Prim.h	/^        inline LinkedList*  ReadAdjList(LinkedListNode* const head_node) {return map_linked_list[head_node];};$/;"	f	class:AdjList
 ReadMapWeight	./include/Prim.h	/^        inline std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>>&                ReadMapWeight() {return map_weight;};$/;"	f	class:AdjList
 ReleaseRecur	../Fibonacci_Heap_ex/Fibonacci_Heap.cpp	/^void Fibonacci_Heap::ReleaseRecur(FTNode* const current_node){$/;"	f	class:Fibonacci_Heap

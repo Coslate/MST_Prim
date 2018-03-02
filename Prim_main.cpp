@@ -9,7 +9,9 @@ int main(){
     bool debug_addr = true;
     bool debug_name = true;
     bool debug_key = true;
-    
+
+    //Declare final solution of MST
+     std::vector<MST_Edge*> final_mst;
     //Declare a new adjacent list to represent Graph(V, E)
     AdjList a1;
     Fibonacci_Heap fib_heap_q;
@@ -186,7 +188,8 @@ int main(){
     Prim_Algorithm::InitialSet(fib_heap_q, all_node, map_node_ll2ft);
     fib_heap_q.Traverse();
 
-
-
+    std::cout<<"-----------------Prim_Algorithm::FindMST-----------------"<<std::endl;
+    Prim_Algorithm::FindMST(fib_heap_q, final_mst, map_node_ft2ll, map_node_st2ll, map_node_ll2ft, a1);
+    Prim_Algorithm::PrintMST(final_mst);
     return EXIT_SUCCESS;
 }
