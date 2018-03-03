@@ -11,7 +11,7 @@ int main(){
     bool debug_key = true;
 
     //Declare final solution of MST
-     std::vector<MST_Edge*> final_mst;
+    std::vector<MST_Edge*> final_mst;
     //Declare a new adjacent list to represent Graph(V, E)
     AdjList a1;
     Fibonacci_Heap fib_heap_q;
@@ -39,15 +39,15 @@ int main(){
     all_node.push_back(node_e);
     
     //Generate the correspondent Fibonacci Node.
-    FTNode* node_a_fib = new FTNode(node_a->GetData());
-    FTNode* node_b_fib = new FTNode(node_b->GetData());
-    FTNode* node_h_fib = new FTNode(node_h->GetData());
-    FTNode* node_i_fib = new FTNode(node_i->GetData());
-    FTNode* node_c_fib = new FTNode(node_c->GetData());
-    FTNode* node_g_fib = new FTNode(node_g->GetData());
-    FTNode* node_f_fib = new FTNode(node_f->GetData());
-    FTNode* node_d_fib = new FTNode(node_d->GetData());
-    FTNode* node_e_fib = new FTNode(node_e->GetData());
+    FTNode* node_a_fib = new FTNode(node_a->GetData(), "a");
+    FTNode* node_b_fib = new FTNode(node_b->GetData(), "b");
+    FTNode* node_h_fib = new FTNode(node_h->GetData(), "h");
+    FTNode* node_i_fib = new FTNode(node_i->GetData(), "i");
+    FTNode* node_c_fib = new FTNode(node_c->GetData(), "c");
+    FTNode* node_g_fib = new FTNode(node_g->GetData(), "g");
+    FTNode* node_f_fib = new FTNode(node_f->GetData(), "f");
+    FTNode* node_d_fib = new FTNode(node_d->GetData(), "d");
+    FTNode* node_e_fib = new FTNode(node_e->GetData(), "e");
 
     //Generate the correspondence between Fibonacci Node & LinkedListNode
     std::unordered_map<LinkedListNode*, FTNode*> map_node_ll2ft;
@@ -190,6 +190,6 @@ int main(){
 
     std::cout<<"-----------------Prim_Algorithm::FindMST-----------------"<<std::endl;
     Prim_Algorithm::FindMST(fib_heap_q, final_mst, map_node_ft2ll, map_node_st2ll, map_node_ll2ft, a1);
-    Prim_Algorithm::PrintMST(final_mst);
+    Prim_Algorithm::PrintMST(final_mst, 5);
     return EXIT_SUCCESS;
 }

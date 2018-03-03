@@ -63,8 +63,8 @@ void Prim_Algorithm::InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<Li
         fib_heap_q.InsertArbitrary(inserted_node_fib);
     }
 }
-bool Prim_Algorithm::CheckIsTheEdge(std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>> &map_weight, LinkedListNode* const candidate_parent, const int &edge_weight, LinkedListNode* const min_ll_node){
-    if((map_weight[candidate_parent].find(min_ll_node) != map_weight[candidate_parent].end()) && (edge_weight == min_ll_node->GetData())){
+bool Prim_Algorithm::CheckIsTheEdge(std::unordered_map<LinkedListNode*, std::unordered_map<LinkedListNode*, int>> &map_weight, LinkedListNode* const candidate_parent, const int &edge_weight, LinkedListNode* const min_ll_node, std::unordered_map<LinkedListNode*, FTNode*> map_node_ll2ft){
+    if((map_weight[candidate_parent].find(min_ll_node) != map_weight[candidate_parent].end()) && (edge_weight == map_node_ll2ft[min_ll_node]->GetKey())){
         return true;
     }else{
         return false;
@@ -76,11 +76,8 @@ void Prim_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> 
     while(fib_heap_q.GetTotalNodeNum() != 0){
         //Extractmin from the Fibonacci_Heap
         FTNode* min_ft_node = fib_heap_q.ExtractMin();
-        std::cout<<"===============Extracted, Traverse()==============="<<std::endl;
-        fib_heap_q.Traverse();
         LinkedListNode* min_ll_node = map_node_ft2ll[min_ft_node];
 
-        std::cout<<"current extracted_min = ("<<min_ll_node->GetName()<<", "<<min_ll_node<<")"<<std::endl;
         //Inserted the MST edge to final_mst
         if(final_mst.size() == 0){
             MST_Edge* inserted_edge = new MST_Edge(NULL, min_ll_node, 0);
@@ -88,9 +85,8 @@ void Prim_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> 
         }else{
             for(std::vector<MST_Edge*>::reverse_iterator i = final_mst.rbegin(); i!=final_mst.rend(); ++i){
                 LinkedListNode* candidate_parent = (*i)->RetEdgeB();
-                std::cout<<"candidate_parent = ("<<candidate_parent->GetName()<<", "<<candidate_parent<<")"<<std::endl;
                 int edge_weight = map_weight[candidate_parent][min_ll_node];
-                if(CheckIsTheEdge(map_weight, candidate_parent, edge_weight, min_ll_node)){
+                if(CheckIsTheEdge(map_weight, candidate_parent, edge_weight, min_ll_node, map_node_ll2ft)){
                     MST_Edge* inserted_edge = new MST_Edge(candidate_parent, min_ll_node, edge_weight);
                     final_mst.push_back(inserted_edge);
                     break;
@@ -98,20 +94,20 @@ void Prim_Algorithm::FindMST(Fibonacci_Heap &fib_heap_q, std::vector<MST_Edge*> 
             }
         }
         
-        //Decrease all the adjacent node with the value of edge weight
-        LinkedList* the_linked_list = adj_list.ReadAdjList(min_ll_node);
-        LinkedListNode* current_node = the_linked_list->GetFristNode();
-        while(current_node != NULL){
-            LinkedListNode* node_to_decrease_ll = map_node_st2ll[current_node->GetName()];
-            FTNode* node_to_decrease = map_node_ll2ft[node_to_decrease_ll];
-            fib_heap_q.DecreaseKey(node_to_decrease, map_weight[min_ll_node][node_to_decrease_ll]);
-            current_node = current_node->GetNext();
+        if(fib_heap_q.GetTotalNodeNum() != 0){
+            //Decrease all the adjacent node with the value of edge weight
+            LinkedList* the_linked_list = adj_list.ReadAdjList(min_ll_node);
+            LinkedListNode* current_node = the_linked_list->GetFristNode();
+            while(current_node != NULL){
+                LinkedListNode* node_to_decrease_ll = map_node_st2ll[current_node->GetName()];
+                FTNode* node_to_decrease = map_node_ll2ft[node_to_decrease_ll];
+                fib_heap_q.DecreaseKey(node_to_decrease, map_weight[min_ll_node][node_to_decrease_ll]);
+                current_node = current_node->GetNext();
+            }
         }
-        std::cout<<"===============DecreaseKey, Traverse()==============="<<std::endl;
-        fib_heap_q.Traverse();
     }
 }
-void Prim_Algorithm::PrintMST(const std::vector<MST_Edge*> &final_mst){
+void Prim_Algorithm::PrintMST(const std::vector<MST_Edge*> &final_mst, const int print_width){
     int min_edge = 0;
     std::cout<<"MST : "<<std::endl;
     for(size_t i=0;i<final_mst.size();++i){
@@ -120,11 +116,11 @@ void Prim_Algorithm::PrintMST(const std::vector<MST_Edge*> &final_mst){
         int edge_weight = final_mst[i]->RetWeight();
 
         if(start_node == NULL){
-            std::cout<<"NULL --> "<<end_node->GetName()<<", weight = "<<edge_weight<<std::endl;
+            printf("(%*s --> %*s, weight = %*d)\n", print_width,  "NULL", print_width, end_node->GetName().c_str(), print_width, edge_weight);
         }else{
-            std::cout<<start_node->GetName()<<" --> "<<end_node->GetName()<<", weight = "<<edge_weight<<std::endl;
+            printf("(%*s --> %*s, weight = %*d)\n", print_width, start_node->GetName().c_str(), print_width, end_node->GetName().c_str(), print_width, edge_weight);
         }
         min_edge += edge_weight;
     }
-    std::cout<<"minimum total edge = "<<min_edge<<std::endl;
+    printf("minimum total edge weight = %d\n", min_edge);
 }

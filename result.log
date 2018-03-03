@@ -10,313 +10,183 @@ g++ -g -Wall -O3 -std=c++11  -c Prim.cpp  -I ./include  -I ../Fibonacci_Heap_ex/
 g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include ../exec_output/Linked_List.o ../exec_output/Fibonacci_Heap.o ../exec_output/Prim.o Prim_main.cpp -o ../exec_output/Prim_main.o
 ../exec_output/Prim_main.o
 -----------------LinkedListNode-----------------
-node_a = (2147483647, 0x214c130)
-node_b = (2147483647, 0x214c180)
-node_h = (2147483647, 0x214c1d0)
-node_i = (2147483647, 0x214c220)
-node_c = (2147483647, 0x214c270)
-node_g = (2147483647, 0x214c2c0)
-node_f = (2147483647, 0x214c310)
-node_d = (2147483647, 0x214c360)
-node_e = (2147483647, 0x214c3b0)
+node_a = (2147483647, 0x7ff432c03270)
+node_b = (2147483647, 0x7ff432c032a0)
+node_h = (2147483647, 0x7ff432c032d0)
+node_i = (2147483647, 0x7ff432c03300)
+node_c = (2147483647, 0x7ff432c03330)
+node_g = (2147483647, 0x7ff432c03370)
+node_f = (2147483647, 0x7ff432c033a0)
+node_d = (2147483647, 0x7ff432c033d0)
+node_e = (2147483647, 0x7ff432c03400)
 ----------------All node-----------------
 all_node = [a, b, h, i, c, g, f, d, e]
 -----------------FTNode-----------------
-node_a_fib = (2147483647, 0x214c520)
-node_b_fib = (2147483647, 0x214c560)
-node_h_fib = (2147483647, 0x214c5a0)
-node_i_fib = (2147483647, 0x214c5e0)
-node_c_fib = (2147483647, 0x214c620)
-node_g_fib = (2147483647, 0x214c660)
-node_f_fib = (2147483647, 0x214c6a0)
-node_d_fib = (2147483647, 0x214c6e0)
-node_e_fib = (2147483647, 0x214c720)
+node_a_fib = (2147483647, 0x7ff432c03510)
+node_b_fib = (2147483647, 0x7ff432c03560)
+node_h_fib = (2147483647, 0x7ff432c035b0)
+node_i_fib = (2147483647, 0x7ff432c03600)
+node_c_fib = (2147483647, 0x7ff432c03650)
+node_g_fib = (2147483647, 0x7ff432c036a0)
+node_f_fib = (2147483647, 0x7ff432c036f0)
+node_d_fib = (2147483647, 0x7ff432c03740)
+node_e_fib = (2147483647, 0x7ff432c03790)
 -----------------map_node_ll2ft-----------------
-map_node_ll2ft[0x214c130] = (2147483647, 0x214c520)
-map_node_ll2ft[0x214c180] = (2147483647, 0x214c560)
-map_node_ll2ft[0x214c1d0] = (2147483647, 0x214c5a0)
-map_node_ll2ft[0x214c220] = (2147483647, 0x214c5e0)
-map_node_ll2ft[0x214c270] = (2147483647, 0x214c620)
-map_node_ll2ft[0x214c2c0] = (2147483647, 0x214c660)
-map_node_ll2ft[0x214c310] = (2147483647, 0x214c6a0)
-map_node_ll2ft[0x214c360] = (2147483647, 0x214c6e0)
-map_node_ll2ft[0x214c3b0] = (2147483647, 0x214c720)
+map_node_ll2ft[0x7ff432c03270] = (2147483647, 0x7ff432c03510)
+map_node_ll2ft[0x7ff432c032a0] = (2147483647, 0x7ff432c03560)
+map_node_ll2ft[0x7ff432c032d0] = (2147483647, 0x7ff432c035b0)
+map_node_ll2ft[0x7ff432c03300] = (2147483647, 0x7ff432c03600)
+map_node_ll2ft[0x7ff432c03330] = (2147483647, 0x7ff432c03650)
+map_node_ll2ft[0x7ff432c03370] = (2147483647, 0x7ff432c036a0)
+map_node_ll2ft[0x7ff432c033a0] = (2147483647, 0x7ff432c036f0)
+map_node_ll2ft[0x7ff432c033d0] = (2147483647, 0x7ff432c03740)
+map_node_ll2ft[0x7ff432c03400] = (2147483647, 0x7ff432c03790)
 -----------------map_node_ft2ll-----------------
-map_node_ft2ll[0x214c520] = (2147483647, 0x214c130)
-map_node_ft2ll[0x214c560] = (2147483647, 0x214c180)
-map_node_ft2ll[0x214c5a0] = (2147483647, 0x214c1d0)
-map_node_ft2ll[0x214c5e0] = (2147483647, 0x214c220)
-map_node_ft2ll[0x214c620] = (2147483647, 0x214c270)
-map_node_ft2ll[0x214c660] = (2147483647, 0x214c2c0)
-map_node_ft2ll[0x214c6a0] = (2147483647, 0x214c310)
-map_node_ft2ll[0x214c6e0] = (2147483647, 0x214c360)
-map_node_ft2ll[0x214c720] = (2147483647, 0x214c3b0)
+map_node_ft2ll[0x7ff432c03510] = (2147483647, 0x7ff432c03270)
+map_node_ft2ll[0x7ff432c03560] = (2147483647, 0x7ff432c032a0)
+map_node_ft2ll[0x7ff432c035b0] = (2147483647, 0x7ff432c032d0)
+map_node_ft2ll[0x7ff432c03600] = (2147483647, 0x7ff432c03300)
+map_node_ft2ll[0x7ff432c03650] = (2147483647, 0x7ff432c03330)
+map_node_ft2ll[0x7ff432c036a0] = (2147483647, 0x7ff432c03370)
+map_node_ft2ll[0x7ff432c036f0] = (2147483647, 0x7ff432c033a0)
+map_node_ft2ll[0x7ff432c03740] = (2147483647, 0x7ff432c033d0)
+map_node_ft2ll[0x7ff432c03790] = (2147483647, 0x7ff432c03400)
 -----------------map_node_st2ll-----------------
-map_node_st2ll[a] = (2147483647, 0x214c130)
-map_node_st2ll[b] = (2147483647, 0x214c180)
-map_node_st2ll[h] = (2147483647, 0x214c1d0)
-map_node_st2ll[i] = (2147483647, 0x214c220)
-map_node_st2ll[c] = (2147483647, 0x214c270)
-map_node_st2ll[g] = (2147483647, 0x214c2c0)
-map_node_st2ll[f] = (2147483647, 0x214c310)
-map_node_st2ll[d] = (2147483647, 0x214c360)
-map_node_st2ll[e] = (2147483647, 0x214c3b0)
+map_node_st2ll[a] = (2147483647, 0x7ff432c03270)
+map_node_st2ll[b] = (2147483647, 0x7ff432c032a0)
+map_node_st2ll[h] = (2147483647, 0x7ff432c032d0)
+map_node_st2ll[i] = (2147483647, 0x7ff432c03300)
+map_node_st2ll[c] = (2147483647, 0x7ff432c03330)
+map_node_st2ll[g] = (2147483647, 0x7ff432c03370)
+map_node_st2ll[f] = (2147483647, 0x7ff432c033a0)
+map_node_st2ll[d] = (2147483647, 0x7ff432c033d0)
+map_node_st2ll[e] = (2147483647, 0x7ff432c03400)
 -----------------Set Adjacent List of Graph(V, E)-----------------
 -----------------AdjList::PrintAdjList, node_a-----------------
 [4 8]
 [b h]
-[0x214ce30 0x214d040]
-first = 0x214ce30
-last = 0x214d040
-map_weight[a] = [4(0x214c130, 0x214c180), 8(0x214c130, 0x214c1d0)]
+[0x7ff432c03cb0 0x7ff432c03e60]
+first = 0x7ff432c03cb0
+last = 0x7ff432c03e60
+map_weight[a] = [4(0x7ff432c03270, 0x7ff432c032a0), 8(0x7ff432c03270, 0x7ff432c032d0)]
 -----------------AdjList::PrintAdjList, node_b-----------------
 [4 8 11]
 [a c h]
-[0x214cf30 0x214d190 0x214d300]
-first = 0x214cf30
-last = 0x214d300
-map_weight[b] = [4(0x214c180, 0x214c130), 8(0x214c180, 0x214c270), 11(0x214c180, 0x214c1d0)]
+[0x7ff432c03da0 0x7ff432c04000 0x7ff432c04120]
+first = 0x7ff432c03da0
+last = 0x7ff432c04120
+map_weight[b] = [4(0x7ff432c032a0, 0x7ff432c03270), 8(0x7ff432c032a0, 0x7ff432c03330), 11(0x7ff432c032a0, 0x7ff432c032d0)]
 -----------------AdjList::PrintAdjList, node_h-----------------
 [8 11 1 7]
 [a b g i]
-[0x214d0a0 0x214d340 0x214d380 0x214d540]
-first = 0x214d0a0
-last = 0x214d540
-map_weight[h] = [8(0x214c1d0, 0x214c130), 11(0x214c1d0, 0x214c180), 1(0x214c1d0, 0x214c2c0), 7(0x214c1d0, 0x214c220)]
+[0x7ff432c03ed0 0x7ff432c041a0 0x7ff432c041f0 0x7ff432c04360]
+first = 0x7ff432c03ed0
+last = 0x7ff432c04360
+map_weight[h] = [8(0x7ff432c032d0, 0x7ff432c03270), 11(0x7ff432c032d0, 0x7ff432c032a0), 1(0x7ff432c032d0, 0x7ff432c03370), 7(0x7ff432c032d0, 0x7ff432c03300)]
 -----------------AdjList::PrintAdjList, node_c-----------------
 [8 2 7 4]
 [b i d f]
-[0x214d1f0 0x214d8a0 0x214d920 0x214da90]
-first = 0x214d1f0
-last = 0x214da90
-map_weight[c] = [8(0x214c270, 0x214c180), 2(0x214c270, 0x214c220), 7(0x214c270, 0x214c360), 4(0x214c270, 0x214c310)]
+[0x7ff432c04070 0x7ff432c046e0 0x7ff432c047b0 0x7ff432c04900]
+first = 0x7ff432c04070
+last = 0x7ff432c04900
+map_weight[c] = [8(0x7ff432c03330, 0x7ff432c032a0), 2(0x7ff432c03330, 0x7ff432c03300), 7(0x7ff432c03330, 0x7ff432c033d0), 4(0x7ff432c03330, 0x7ff432c033a0)]
 -----------------AdjList::PrintAdjList, node_i-----------------
 [7 6 2]
 [h g c]
-[0x214d5a0 0x214d860 0x214d8e0]
-first = 0x214d5a0
-last = 0x214d8e0
-map_weight[i] = [7(0x214c220, 0x214c1d0), 6(0x214c220, 0x214c2c0), 2(0x214c220, 0x214c270)]
+[0x7ff432c043d0 0x7ff432c04690 0x7ff432c04730]
+first = 0x7ff432c043d0
+last = 0x7ff432c04730
+map_weight[i] = [7(0x7ff432c03300, 0x7ff432c032d0), 6(0x7ff432c03300, 0x7ff432c03370), 2(0x7ff432c03300, 0x7ff432c03330)]
 -----------------AdjList::PrintAdjList, node_g-----------------
 [1 2 6]
 [h f i]
-[0x214d3e0 0x214d6b0 0x214d820]
-first = 0x214d3e0
-last = 0x214d820
-map_weight[g] = [1(0x214c2c0, 0x214c1d0), 2(0x214c2c0, 0x214c310), 6(0x214c2c0, 0x214c220)]
+[0x7ff432c04290 0x7ff432c03fb0 0x7ff432c04610]
+first = 0x7ff432c04290
+last = 0x7ff432c04610
+map_weight[g] = [1(0x7ff432c03370, 0x7ff432c032d0), 2(0x7ff432c03370, 0x7ff432c033a0), 6(0x7ff432c03370, 0x7ff432c03300)]
 -----------------AdjList::PrintAdjList, node_d-----------------
 [7 14 9]
 [c f e]
-[0x214d980 0x214db50 0x214dd40]
-first = 0x214d980
-last = 0x214dd40
-map_weight[d] = [7(0x214c360, 0x214c270), 14(0x214c360, 0x214c310), 9(0x214c360, 0x214c3b0)]
+[0x7ff432c04850 0x7ff432c04a20 0x7ff432c04bd0]
+first = 0x7ff432c04850
+last = 0x7ff432c04bd0
+map_weight[d] = [7(0x7ff432c033d0, 0x7ff432c03330), 14(0x7ff432c033d0, 0x7ff432c033a0), 9(0x7ff432c033d0, 0x7ff432c03400)]
 -----------------AdjList::PrintAdjList, node_e-----------------
 [10 9]
 [f d]
-[0x214dbf0 0x214dd80]
-first = 0x214dbf0
-last = 0x214dd80
-map_weight[e] = [10(0x214c3b0, 0x214c310), 9(0x214c3b0, 0x214c360)]
+[0x7ff432c04ae0 0x7ff432c04c50]
+first = 0x7ff432c04ae0
+last = 0x7ff432c04c50
+map_weight[e] = [10(0x7ff432c03400, 0x7ff432c033a0), 9(0x7ff432c03400, 0x7ff432c033d0)]
 -----------------AdjList::PrintAdjList, node_f-----------------
 [2 4 14 10]
 [g c d e]
-[0x214d710 0x214dad0 0x214db10 0x214db90]
-first = 0x214d710
-last = 0x214db90
-map_weight[f] = [2(0x214c310, 0x214c2c0), 4(0x214c310, 0x214c270), 14(0x214c310, 0x214c360), 10(0x214c310, 0x214c3b0)]
+[0x7ff432c04560 0x7ff432c04950 0x7ff432c049a0 0x7ff432c04a70]
+first = 0x7ff432c04560
+last = 0x7ff432c04a70
+map_weight[f] = [2(0x7ff432c033a0, 0x7ff432c03370), 4(0x7ff432c033a0, 0x7ff432c03330), 14(0x7ff432c033a0, 0x7ff432c033d0), 10(0x7ff432c033a0, 0x7ff432c03400)]
 -----------------Prim_Algorithm::InitialSet-----------------
 ##################################
 #########      F0      ###########
 ##################################
-(2147483647, 0x214c560, 0  , False)
+(2147483647, 0x7ff432c03560, 0  , False, b  , True)
 ##################################
 #########      F1      ###########
 ##################################
-(2147483647, 0x214c5a0, 0  , False)
+(2147483647, 0x7ff432c035b0, 0  , False, h  , True)
 ##################################
 #########      F2      ###########
 ##################################
-(2147483647, 0x214c5e0, 0  , False)
+(2147483647, 0x7ff432c03600, 0  , False, i  , True)
 ##################################
 #########      F3      ###########
 ##################################
-(2147483647, 0x214c620, 0  , False)
+(2147483647, 0x7ff432c03650, 0  , False, c  , True)
 ##################################
 #########      F4      ###########
 ##################################
-(2147483647, 0x214c660, 0  , False)
+(2147483647, 0x7ff432c036a0, 0  , False, g  , True)
 ##################################
 #########      F5      ###########
 ##################################
-(2147483647, 0x214c6a0, 0  , False)
+(2147483647, 0x7ff432c036f0, 0  , False, f  , True)
 ##################################
 #########      F6      ###########
 ##################################
-(2147483647, 0x214c6e0, 0  , False)
+(2147483647, 0x7ff432c03740, 0  , False, d  , True)
 ##################################
 #########      F7      ###########
 ##################################
-(2147483647, 0x214c720, 0  , False)
+(2147483647, 0x7ff432c03790, 0  , False, e  , True)
 ##################################
 #########      F8      ###########
 ##################################
-(0  , 0x214c520, 0  , False)
+(0  , 0x7ff432c03510, 0  , False, a  , True)
 -----------------Prim_Algorithm::FindMST-----------------
-===============Extracted, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(2147483647, 0x214c720, 3  , False)
--------------------------------------
-(2147483647, 0x214c720, 3  , False)--> (2147483647, 0x214c6e0, 0  , False)--(2147483647, 0x214c6a0, 1  , False)--(2147483647, 0x214c620, 2  , False)
--------------------------------------
-(2147483647, 0x214c6a0, 1  , False)--> (2147483647, 0x214c660, 0  , False)
-(2147483647, 0x214c620, 2  , False)--> (2147483647, 0x214c5e0, 0  , False)--(2147483647, 0x214c5a0, 1  , False)
--------------------------------------
-(2147483647, 0x214c5a0, 1  , False)--> (2147483647, 0x214c560, 0  , False)
-current extracted_min = (a, 0x214c130)
-===============DecreaseKey, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(8  , 0x214c5a0, 0  , False)
-##################################
-#########      F1      ###########
-##################################
-(4  , 0x214c560, 0  , False)
-##################################
-#########      F2      ###########
-##################################
-(2147483647, 0x214c720, 3  , False)
--------------------------------------
-(2147483647, 0x214c720, 3  , False)--> (2147483647, 0x214c6e0, 0  , False)--(2147483647, 0x214c6a0, 1  , False)--(2147483647, 0x214c620, 1  , True)
--------------------------------------
-(2147483647, 0x214c6a0, 1  , False)--> (2147483647, 0x214c660, 0  , False)
-(2147483647, 0x214c620, 1  , True)--> (2147483647, 0x214c5e0, 0  , False)
-===============Extracted, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(8  , 0x214c5a0, 0  , False)
-##################################
-#########      F1      ###########
-##################################
-(2147483647, 0x214c720, 3  , False)
--------------------------------------
-(2147483647, 0x214c720, 3  , False)--> (2147483647, 0x214c6e0, 0  , False)--(2147483647, 0x214c6a0, 1  , False)--(2147483647, 0x214c620, 1  , True)
--------------------------------------
-(2147483647, 0x214c6a0, 1  , False)--> (2147483647, 0x214c660, 0  , False)
-(2147483647, 0x214c620, 1  , True)--> (2147483647, 0x214c5e0, 0  , False)
-current extracted_min = (b, 0x214c180)
-candidate_parent = (a, 0x214c130)
-Warning : New key is greater than current key at the node with address. No change.0x214c520
-Warning : New key is greater than current key at the node with address. No change.0x214c5a0
-===============DecreaseKey, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(8  , 0x214c620, 1  , False)
--------------------------------------
-(8  , 0x214c620, 1  , False)--> (2147483647, 0x214c5e0, 0  , False)
-##################################
-#########      F1      ###########
-##################################
-(8  , 0x214c5a0, 0  , False)
-##################################
-#########      F2      ###########
-##################################
-(2147483647, 0x214c720, 2  , False)
--------------------------------------
-(2147483647, 0x214c720, 2  , False)--> (2147483647, 0x214c6e0, 0  , False)--(2147483647, 0x214c6a0, 1  , False)
--------------------------------------
-(2147483647, 0x214c6a0, 1  , False)--> (2147483647, 0x214c660, 0  , False)
-===============Extracted, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(8  , 0x214c620, 1  , False)
--------------------------------------
-(8  , 0x214c620, 1  , False)--> (2147483647, 0x214c5e0, 0  , False)
-##################################
-#########      F1      ###########
-##################################
-(2147483647, 0x214c720, 2  , False)
--------------------------------------
-(2147483647, 0x214c720, 2  , False)--> (2147483647, 0x214c6e0, 0  , False)--(2147483647, 0x214c6a0, 1  , False)
--------------------------------------
-(2147483647, 0x214c6a0, 1  , False)--> (2147483647, 0x214c660, 0  , False)
-current extracted_min = (h, 0x214c1d0)
-candidate_parent = (a, 0x214c130)
-Warning : New key is greater than current key at the node with address. No change.0x214c520
-Warning : New key is greater than current key at the node with address. No change.0x214c560
-===============DecreaseKey, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(7  , 0x214c5e0, 0  , False)
-##################################
-#########      F1      ###########
-##################################
-(1  , 0x214c660, 0  , False)
-##################################
-#########      F2      ###########
-##################################
-(8  , 0x214c620, 0  , False)
-##################################
-#########      F3      ###########
-##################################
-(2147483647, 0x214c720, 2  , False)
--------------------------------------
-(2147483647, 0x214c720, 2  , False)--> (2147483647, 0x214c6e0, 0  , False)--(2147483647, 0x214c6a0, 0  , True)
-===============Extracted, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(7  , 0x214c5e0, 1  , False)
--------------------------------------
-(7  , 0x214c5e0, 1  , False)--> (8  , 0x214c620, 0  , False)
-##################################
-#########      F1      ###########
-##################################
-(2147483647, 0x214c720, 2  , False)
--------------------------------------
-(2147483647, 0x214c720, 2  , False)--> (2147483647, 0x214c6e0, 0  , False)--(2147483647, 0x214c6a0, 0  , True)
-current extracted_min = (g, 0x214c2c0)
-candidate_parent = (a, 0x214c130)
-===============DecreaseKey, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(2  , 0x214c6a0, 0  , False)
-##################################
-#########      F1      ###########
-##################################
-(1  , 0x214c5a0, 0  , False)
-===============Extracted, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(2  , 0x214c6a0, 0  , False)
-current extracted_min = (h, 0x214c1d0)
-candidate_parent = (a, 0x214c130)
-Warning : New key is greater than current key at the node with address. No change.0x214c520
-Warning : New key is greater than current key at the node with address. No change.0x214c560
-Warning : New key is greater than current key at the node with address. No change.0x214c5e0
-===============DecreaseKey, Traverse()===============
-##################################
-#########      F0      ###########
-##################################
-(2  , 0x214c6a0, 0  , False)
-===============Extracted, Traverse()===============
-current extracted_min = (g, 0x214c2c0)
-candidate_parent = (a, 0x214c130)
-Error : There is no node in the Fibonacci_Heap.0x214c5a0
-Error : There is no node in the Fibonacci_Heap.0x214c6a0
-Error : There is no node in the Fibonacci_Heap.0x214c5e0
-===============DecreaseKey, Traverse()===============
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c03510
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c035b0
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c03510
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c03560
+Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7ff432c035b0
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c036a0
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c03560
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c036f0
+Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7ff432c035b0
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c036a0
+Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7ff432c03650
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c03650
+Warning : New key is greater than current key at the node with address. No change.0x7ff432c036f0
 MST : 
-NULL --> a, weight = 0
-minimum total edge = 0
-It is destructor.
+( NULL -->     a, weight =     0)
+(    a -->     b, weight =     4)
+(    a -->     h, weight =     8)
+(    h -->     g, weight =     1)
+(    g -->     f, weight =     2)
+(    f -->     c, weight =     4)
+(    c -->     i, weight =     2)
+(    c -->     d, weight =     7)
+(    d -->     e, weight =     9)
+minimum total edge weight = 37
+It is Fibonacci_Heap destructor.
 It is AdjList destructor.
+It is LinkedList destructor.
