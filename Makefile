@@ -36,6 +36,7 @@ all_file_tags :
 
 clean :
 	rm -rf $(MAIN_OBJECT_EXEC_OUTPUT)Linked_List.o
+	rm -rf $(MAIN_OBJECT_EXEC_OUTPUT)Fibonacci_Heap.o
 	rm -rf $(MAIN_OBJECT_EXEC_OUTPUT)$(MAIN_OBJECT_EXEC)
 	rm -rf $(MAIN_OBJECT_EXEC_OUTPUT)$(MAIN_OBJECT_EXEC_MAIN)
 	rm -rf ./tags
