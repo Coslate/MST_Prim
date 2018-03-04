@@ -191,5 +191,8 @@ int main(){
     std::cout<<"-----------------Prim_Algorithm::FindMST-----------------"<<std::endl;
     Prim_Algorithm::FindMST(fib_heap_q, final_mst, map_node_ft2ll, map_node_st2ll, map_node_ll2ft, a1);
     Prim_Algorithm::PrintMST(final_mst, 5);
+    std::cout<<"-----------------Prim_Algorithm::Release-----------------"<<std::endl;
+    Prim_Algorithm::Release(final_mst);
+
     return EXIT_SUCCESS;
 }

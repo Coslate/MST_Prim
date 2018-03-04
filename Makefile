@@ -3,7 +3,7 @@ CC = g++
 INCLUDE_FILES = ./include ../Fibonacci_Heap_ex/include ../Linked_List_ex/include
 INCLUDE_FLAGS = $(foreach d, $(INCLUDE_FILES), -I $d)
 CTAGS_UTIL = /usr/local/bin/
-CTAGS_FILES = ./include ../Fibonacci_Heap_ex ../Linked_List_ex
+CTAGS_FILES = ./include ../Fibonacci_Heap_ex ../Fibonacci_Heap_ex/include ../Linked_List_ex ../Linked_List_ex/include
 CTAGS_FLAGS = $(foreach d, $(CTAGS_FILES),-a $d/*)
 CFLAGS = -g -Wall -O3 -std=c++11 
 COMPILE_FLAGS = -c

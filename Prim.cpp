@@ -6,6 +6,10 @@
 
 AdjList::~AdjList(){
     std::cout<<"It is AdjList destructor."<<std::endl;
+    for(size_t i=0;i<collect_linked_list.size();++i){
+        LinkedList* the_linked_list = collect_linked_list[i];
+        delete the_linked_list;
+    }
 }
 void AdjList::SetAdjList(LinkedListNode* const head_node, LinkedListNode* const inserted_node, const int weight){
     if(map_linked_list.find(head_node) == map_linked_list.end()){
@@ -123,4 +127,11 @@ void Prim_Algorithm::PrintMST(const std::vector<MST_Edge*> &final_mst, const int
         min_edge += edge_weight;
     }
     printf("minimum total edge weight = %d\n", min_edge);
+}
+void Prim_Algorithm::Release(std::vector<MST_Edge*> &final_mst){
+    while (!final_mst.empty()){
+        MST_Edge* edge_to_delete = final_mst.back();
+        final_mst.pop_back();
+        delete edge_to_delete;
+    }
 }
