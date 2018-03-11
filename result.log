@@ -4,181 +4,181 @@ rm -rf ../exec_output/AdjList.o
 rm -rf ../exec_output/Prim.o
 rm -rf ../exec_output/Prim_main.o
 rm -rf ./tags
-g++ -g -Wall -O3 -std=c++11  -c ../Linked_List_ex/Linked_List.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/Linked_List.o
-g++ -g -Wall -O3 -std=c++11  -c ../Fibonacci_Heap_ex/Fibonacci_Heap.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/Fibonacci_Heap.o
-g++ -g -Wall -O3 -std=c++11  -c ../Adjacent_List/AdjList.cpp  -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/AdjList.o
-g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -c Prim.cpp -o ../exec_output/Prim.o
+g++ -g -Wall -O3 -std=c++11  -c ../Linked_List/Linked_List.cpp  -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/Linked_List.o
+g++ -g -Wall -O3 -std=c++11  -c ../Fibonacci_Heap/Fibonacci_Heap.cpp  -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/Fibonacci_Heap.o
+g++ -g -Wall -O3 -std=c++11  -c ../Adjacent_List/AdjList.cpp  -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -o ../exec_output/AdjList.o
+g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include -c Prim.cpp -o ../exec_output/Prim.o
 /usr/local/bin/ctags -R ./*
-/usr/local/bin/ctags -a ./include/* -a ../Fibonacci_Heap_ex/* -a ../Fibonacci_Heap_ex/include/* -a ../Linked_List_ex/* -a ../Linked_List_ex/include/* -a ../Adjacent_List/* -a ../Adjacent_List/include/* -a ../MST_Edge/include/*
-g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap_ex/include  -I ../Linked_List_ex/include  -I ../Adjacent_List/include  -I ../MST_Edge/include ../exec_output/Linked_List.o ../exec_output/Fibonacci_Heap.o ../exec_output/AdjList.o ../exec_output/Prim.o Prim_main.cpp -o ../exec_output/Prim_main.o
+/usr/local/bin/ctags -a ./include/* -a ../Fibonacci_Heap/* -a ../Fibonacci_Heap/include/* -a ../Linked_List/* -a ../Linked_List/include/* -a ../Adjacent_List/* -a ../Adjacent_List/include/* -a ../MST_Edge/include/*
+g++ -g -Wall -O3 -std=c++11   -I ./include  -I ../Fibonacci_Heap/include  -I ../Linked_List/include  -I ../Adjacent_List/include  -I ../MST_Edge/include ../exec_output/Linked_List.o ../exec_output/Fibonacci_Heap.o ../exec_output/AdjList.o ../exec_output/Prim.o Prim_main.cpp -o ../exec_output/Prim_main.o
 ../exec_output/Prim_main.o
 -----------------LinkedListNode-----------------
-node_a = (2147483647, 0x7fa798c03270)
-node_b = (2147483647, 0x7fa798c032a0)
-node_h = (2147483647, 0x7fa798c032d0)
-node_i = (2147483647, 0x7fa798c03300)
-node_c = (2147483647, 0x7fa798c03330)
-node_g = (2147483647, 0x7fa798c03370)
-node_f = (2147483647, 0x7fa798c033a0)
-node_d = (2147483647, 0x7fa798c033d0)
-node_e = (2147483647, 0x7fa798c03400)
+node_a = (2147483647, 0x7fc1f8c03270)
+node_b = (2147483647, 0x7fc1f8c032a0)
+node_h = (2147483647, 0x7fc1f8c032d0)
+node_i = (2147483647, 0x7fc1f8c03300)
+node_c = (2147483647, 0x7fc1f8c03330)
+node_g = (2147483647, 0x7fc1f8c03370)
+node_f = (2147483647, 0x7fc1f8c033a0)
+node_d = (2147483647, 0x7fc1f8c033d0)
+node_e = (2147483647, 0x7fc1f8c03400)
 ----------------All node-----------------
 all_node = [a, b, h, i, c, g, f, d, e]
 -----------------FTNode-----------------
-node_a_fib = (2147483647, 0x7fa798c03510)
-node_b_fib = (2147483647, 0x7fa798c03560)
-node_h_fib = (2147483647, 0x7fa798c035b0)
-node_i_fib = (2147483647, 0x7fa798c03600)
-node_c_fib = (2147483647, 0x7fa798c03650)
-node_g_fib = (2147483647, 0x7fa798c036a0)
-node_f_fib = (2147483647, 0x7fa798c036f0)
-node_d_fib = (2147483647, 0x7fa798c03740)
-node_e_fib = (2147483647, 0x7fa798c03790)
+node_a_fib = (2147483647, 0x7fc1f8c03510)
+node_b_fib = (2147483647, 0x7fc1f8c03560)
+node_h_fib = (2147483647, 0x7fc1f8c035b0)
+node_i_fib = (2147483647, 0x7fc1f8c03600)
+node_c_fib = (2147483647, 0x7fc1f8c03650)
+node_g_fib = (2147483647, 0x7fc1f8c036a0)
+node_f_fib = (2147483647, 0x7fc1f8c036f0)
+node_d_fib = (2147483647, 0x7fc1f8c03740)
+node_e_fib = (2147483647, 0x7fc1f8c03790)
 -----------------map_node_ll2ft-----------------
-map_node_ll2ft[0x7fa798c03270] = (2147483647, 0x7fa798c03510)
-map_node_ll2ft[0x7fa798c032a0] = (2147483647, 0x7fa798c03560)
-map_node_ll2ft[0x7fa798c032d0] = (2147483647, 0x7fa798c035b0)
-map_node_ll2ft[0x7fa798c03300] = (2147483647, 0x7fa798c03600)
-map_node_ll2ft[0x7fa798c03330] = (2147483647, 0x7fa798c03650)
-map_node_ll2ft[0x7fa798c03370] = (2147483647, 0x7fa798c036a0)
-map_node_ll2ft[0x7fa798c033a0] = (2147483647, 0x7fa798c036f0)
-map_node_ll2ft[0x7fa798c033d0] = (2147483647, 0x7fa798c03740)
-map_node_ll2ft[0x7fa798c03400] = (2147483647, 0x7fa798c03790)
+map_node_ll2ft[0x7fc1f8c03270] = (2147483647, 0x7fc1f8c03510)
+map_node_ll2ft[0x7fc1f8c032a0] = (2147483647, 0x7fc1f8c03560)
+map_node_ll2ft[0x7fc1f8c032d0] = (2147483647, 0x7fc1f8c035b0)
+map_node_ll2ft[0x7fc1f8c03300] = (2147483647, 0x7fc1f8c03600)
+map_node_ll2ft[0x7fc1f8c03330] = (2147483647, 0x7fc1f8c03650)
+map_node_ll2ft[0x7fc1f8c03370] = (2147483647, 0x7fc1f8c036a0)
+map_node_ll2ft[0x7fc1f8c033a0] = (2147483647, 0x7fc1f8c036f0)
+map_node_ll2ft[0x7fc1f8c033d0] = (2147483647, 0x7fc1f8c03740)
+map_node_ll2ft[0x7fc1f8c03400] = (2147483647, 0x7fc1f8c03790)
 -----------------map_node_ft2ll-----------------
-map_node_ft2ll[0x7fa798c03510] = (2147483647, 0x7fa798c03270)
-map_node_ft2ll[0x7fa798c03560] = (2147483647, 0x7fa798c032a0)
-map_node_ft2ll[0x7fa798c035b0] = (2147483647, 0x7fa798c032d0)
-map_node_ft2ll[0x7fa798c03600] = (2147483647, 0x7fa798c03300)
-map_node_ft2ll[0x7fa798c03650] = (2147483647, 0x7fa798c03330)
-map_node_ft2ll[0x7fa798c036a0] = (2147483647, 0x7fa798c03370)
-map_node_ft2ll[0x7fa798c036f0] = (2147483647, 0x7fa798c033a0)
-map_node_ft2ll[0x7fa798c03740] = (2147483647, 0x7fa798c033d0)
-map_node_ft2ll[0x7fa798c03790] = (2147483647, 0x7fa798c03400)
+map_node_ft2ll[0x7fc1f8c03510] = (2147483647, 0x7fc1f8c03270)
+map_node_ft2ll[0x7fc1f8c03560] = (2147483647, 0x7fc1f8c032a0)
+map_node_ft2ll[0x7fc1f8c035b0] = (2147483647, 0x7fc1f8c032d0)
+map_node_ft2ll[0x7fc1f8c03600] = (2147483647, 0x7fc1f8c03300)
+map_node_ft2ll[0x7fc1f8c03650] = (2147483647, 0x7fc1f8c03330)
+map_node_ft2ll[0x7fc1f8c036a0] = (2147483647, 0x7fc1f8c03370)
+map_node_ft2ll[0x7fc1f8c036f0] = (2147483647, 0x7fc1f8c033a0)
+map_node_ft2ll[0x7fc1f8c03740] = (2147483647, 0x7fc1f8c033d0)
+map_node_ft2ll[0x7fc1f8c03790] = (2147483647, 0x7fc1f8c03400)
 -----------------map_node_st2ll-----------------
-map_node_st2ll[a] = (2147483647, 0x7fa798c03270)
-map_node_st2ll[b] = (2147483647, 0x7fa798c032a0)
-map_node_st2ll[h] = (2147483647, 0x7fa798c032d0)
-map_node_st2ll[i] = (2147483647, 0x7fa798c03300)
-map_node_st2ll[c] = (2147483647, 0x7fa798c03330)
-map_node_st2ll[g] = (2147483647, 0x7fa798c03370)
-map_node_st2ll[f] = (2147483647, 0x7fa798c033a0)
-map_node_st2ll[d] = (2147483647, 0x7fa798c033d0)
-map_node_st2ll[e] = (2147483647, 0x7fa798c03400)
+map_node_st2ll[a] = (2147483647, 0x7fc1f8c03270)
+map_node_st2ll[b] = (2147483647, 0x7fc1f8c032a0)
+map_node_st2ll[h] = (2147483647, 0x7fc1f8c032d0)
+map_node_st2ll[i] = (2147483647, 0x7fc1f8c03300)
+map_node_st2ll[c] = (2147483647, 0x7fc1f8c03330)
+map_node_st2ll[g] = (2147483647, 0x7fc1f8c03370)
+map_node_st2ll[f] = (2147483647, 0x7fc1f8c033a0)
+map_node_st2ll[d] = (2147483647, 0x7fc1f8c033d0)
+map_node_st2ll[e] = (2147483647, 0x7fc1f8c03400)
 -----------------Set Adjacent List of Graph(V, E)-----------------
 -----------------AdjList::PrintAdjList, node_a-----------------
 [4 8]
 [b h]
-[0x7fa798c03cb0 0x7fa798c03e60]
-first = 0x7fa798c03cb0
-last = 0x7fa798c03e60
-map_weight[a] = [4(0x7fa798c03270, 0x7fa798c032a0), 8(0x7fa798c03270, 0x7fa798c032d0)]
+[0x7fc1f8c03cb0 0x7fc1f8c03e60]
+first = 0x7fc1f8c03cb0
+last = 0x7fc1f8c03e60
+map_weight[a] = [4(0x7fc1f8c03270, 0x7fc1f8c032a0), 8(0x7fc1f8c03270, 0x7fc1f8c032d0)]
 -----------------AdjList::PrintAdjList, node_b-----------------
 [4 8 11]
 [a c h]
-[0x7fa798c03da0 0x7fa798c04000 0x7fa798c04120]
-first = 0x7fa798c03da0
-last = 0x7fa798c04120
-map_weight[b] = [4(0x7fa798c032a0, 0x7fa798c03270), 8(0x7fa798c032a0, 0x7fa798c03330), 11(0x7fa798c032a0, 0x7fa798c032d0)]
+[0x7fc1f8c03da0 0x7fc1f8c04000 0x7fc1f8c04120]
+first = 0x7fc1f8c03da0
+last = 0x7fc1f8c04120
+map_weight[b] = [4(0x7fc1f8c032a0, 0x7fc1f8c03270), 8(0x7fc1f8c032a0, 0x7fc1f8c03330), 11(0x7fc1f8c032a0, 0x7fc1f8c032d0)]
 -----------------AdjList::PrintAdjList, node_h-----------------
 [8 11 1 7]
 [a b g i]
-[0x7fa798c03ed0 0x7fa798c041a0 0x7fa798c041f0 0x7fa798c04360]
-first = 0x7fa798c03ed0
-last = 0x7fa798c04360
-map_weight[h] = [8(0x7fa798c032d0, 0x7fa798c03270), 11(0x7fa798c032d0, 0x7fa798c032a0), 1(0x7fa798c032d0, 0x7fa798c03370), 7(0x7fa798c032d0, 0x7fa798c03300)]
+[0x7fc1f8c03ed0 0x7fc1f8c041a0 0x7fc1f8c041f0 0x7fc1f8c04360]
+first = 0x7fc1f8c03ed0
+last = 0x7fc1f8c04360
+map_weight[h] = [8(0x7fc1f8c032d0, 0x7fc1f8c03270), 11(0x7fc1f8c032d0, 0x7fc1f8c032a0), 1(0x7fc1f8c032d0, 0x7fc1f8c03370), 7(0x7fc1f8c032d0, 0x7fc1f8c03300)]
 -----------------AdjList::PrintAdjList, node_c-----------------
 [8 2 7 4]
 [b i d f]
-[0x7fa798c04070 0x7fa798c046e0 0x7fa798c047b0 0x7fa798c04900]
-first = 0x7fa798c04070
-last = 0x7fa798c04900
-map_weight[c] = [8(0x7fa798c03330, 0x7fa798c032a0), 2(0x7fa798c03330, 0x7fa798c03300), 7(0x7fa798c03330, 0x7fa798c033d0), 4(0x7fa798c03330, 0x7fa798c033a0)]
+[0x7fc1f8c04070 0x7fc1f8c046e0 0x7fc1f8c047b0 0x7fc1f8c04900]
+first = 0x7fc1f8c04070
+last = 0x7fc1f8c04900
+map_weight[c] = [8(0x7fc1f8c03330, 0x7fc1f8c032a0), 2(0x7fc1f8c03330, 0x7fc1f8c03300), 7(0x7fc1f8c03330, 0x7fc1f8c033d0), 4(0x7fc1f8c03330, 0x7fc1f8c033a0)]
 -----------------AdjList::PrintAdjList, node_i-----------------
 [7 6 2]
 [h g c]
-[0x7fa798c043d0 0x7fa798c04690 0x7fa798c04730]
-first = 0x7fa798c043d0
-last = 0x7fa798c04730
-map_weight[i] = [7(0x7fa798c03300, 0x7fa798c032d0), 6(0x7fa798c03300, 0x7fa798c03370), 2(0x7fa798c03300, 0x7fa798c03330)]
+[0x7fc1f8c043d0 0x7fc1f8c04690 0x7fc1f8c04730]
+first = 0x7fc1f8c043d0
+last = 0x7fc1f8c04730
+map_weight[i] = [7(0x7fc1f8c03300, 0x7fc1f8c032d0), 6(0x7fc1f8c03300, 0x7fc1f8c03370), 2(0x7fc1f8c03300, 0x7fc1f8c03330)]
 -----------------AdjList::PrintAdjList, node_g-----------------
 [1 2 6]
 [h f i]
-[0x7fa798c04290 0x7fa798c03fb0 0x7fa798c04610]
-first = 0x7fa798c04290
-last = 0x7fa798c04610
-map_weight[g] = [1(0x7fa798c03370, 0x7fa798c032d0), 2(0x7fa798c03370, 0x7fa798c033a0), 6(0x7fa798c03370, 0x7fa798c03300)]
+[0x7fc1f8c04290 0x7fc1f8c03fb0 0x7fc1f8c04610]
+first = 0x7fc1f8c04290
+last = 0x7fc1f8c04610
+map_weight[g] = [1(0x7fc1f8c03370, 0x7fc1f8c032d0), 2(0x7fc1f8c03370, 0x7fc1f8c033a0), 6(0x7fc1f8c03370, 0x7fc1f8c03300)]
 -----------------AdjList::PrintAdjList, node_d-----------------
 [7 14 9]
 [c f e]
-[0x7fa798c04850 0x7fa798c04a20 0x7fa798c04bd0]
-first = 0x7fa798c04850
-last = 0x7fa798c04bd0
-map_weight[d] = [7(0x7fa798c033d0, 0x7fa798c03330), 14(0x7fa798c033d0, 0x7fa798c033a0), 9(0x7fa798c033d0, 0x7fa798c03400)]
+[0x7fc1f8c04850 0x7fc1f8c04a20 0x7fc1f8c04bd0]
+first = 0x7fc1f8c04850
+last = 0x7fc1f8c04bd0
+map_weight[d] = [7(0x7fc1f8c033d0, 0x7fc1f8c03330), 14(0x7fc1f8c033d0, 0x7fc1f8c033a0), 9(0x7fc1f8c033d0, 0x7fc1f8c03400)]
 -----------------AdjList::PrintAdjList, node_e-----------------
 [10 9]
 [f d]
-[0x7fa798c04ae0 0x7fa798c04c50]
-first = 0x7fa798c04ae0
-last = 0x7fa798c04c50
-map_weight[e] = [10(0x7fa798c03400, 0x7fa798c033a0), 9(0x7fa798c03400, 0x7fa798c033d0)]
+[0x7fc1f8c04ae0 0x7fc1f8c04c50]
+first = 0x7fc1f8c04ae0
+last = 0x7fc1f8c04c50
+map_weight[e] = [10(0x7fc1f8c03400, 0x7fc1f8c033a0), 9(0x7fc1f8c03400, 0x7fc1f8c033d0)]
 -----------------AdjList::PrintAdjList, node_f-----------------
 [2 4 14 10]
 [g c d e]
-[0x7fa798c04560 0x7fa798c04950 0x7fa798c049a0 0x7fa798c04a70]
-first = 0x7fa798c04560
-last = 0x7fa798c04a70
-map_weight[f] = [2(0x7fa798c033a0, 0x7fa798c03370), 4(0x7fa798c033a0, 0x7fa798c03330), 14(0x7fa798c033a0, 0x7fa798c033d0), 10(0x7fa798c033a0, 0x7fa798c03400)]
+[0x7fc1f8c04560 0x7fc1f8c04950 0x7fc1f8c049a0 0x7fc1f8c04a70]
+first = 0x7fc1f8c04560
+last = 0x7fc1f8c04a70
+map_weight[f] = [2(0x7fc1f8c033a0, 0x7fc1f8c03370), 4(0x7fc1f8c033a0, 0x7fc1f8c03330), 14(0x7fc1f8c033a0, 0x7fc1f8c033d0), 10(0x7fc1f8c033a0, 0x7fc1f8c03400)]
 -----------------Prim_Algorithm::InitialSet-----------------
 ##################################
 #########      F0      ###########
 ##################################
-(2147483647, 0x7fa798c03560, 0  , False, b  , True)
+(2147483647, 0x7fc1f8c03560, 0  , False, b  , True)
 ##################################
 #########      F1      ###########
 ##################################
-(2147483647, 0x7fa798c035b0, 0  , False, h  , True)
+(2147483647, 0x7fc1f8c035b0, 0  , False, h  , True)
 ##################################
 #########      F2      ###########
 ##################################
-(2147483647, 0x7fa798c03600, 0  , False, i  , True)
+(2147483647, 0x7fc1f8c03600, 0  , False, i  , True)
 ##################################
 #########      F3      ###########
 ##################################
-(2147483647, 0x7fa798c03650, 0  , False, c  , True)
+(2147483647, 0x7fc1f8c03650, 0  , False, c  , True)
 ##################################
 #########      F4      ###########
 ##################################
-(2147483647, 0x7fa798c036a0, 0  , False, g  , True)
+(2147483647, 0x7fc1f8c036a0, 0  , False, g  , True)
 ##################################
 #########      F5      ###########
 ##################################
-(2147483647, 0x7fa798c036f0, 0  , False, f  , True)
+(2147483647, 0x7fc1f8c036f0, 0  , False, f  , True)
 ##################################
 #########      F6      ###########
 ##################################
-(2147483647, 0x7fa798c03740, 0  , False, d  , True)
+(2147483647, 0x7fc1f8c03740, 0  , False, d  , True)
 ##################################
 #########      F7      ###########
 ##################################
-(2147483647, 0x7fa798c03790, 0  , False, e  , True)
+(2147483647, 0x7fc1f8c03790, 0  , False, e  , True)
 ##################################
 #########      F8      ###########
 ##################################
-(0  , 0x7fa798c03510, 0  , False, a  , True)
+(0  , 0x7fc1f8c03510, 0  , False, a  , True)
 -----------------Prim_Algorithm::FindMST-----------------
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c03510
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c035b0
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c03510
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c03560
-Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7fa798c035b0
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c036a0
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c03560
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c036f0
-Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7fa798c035b0
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c036a0
-Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7fa798c03650
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c03650
-Warning : New key is greater than current key at the node with address. No change.0x7fa798c036f0
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c03510
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c035b0
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c03510
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c03560
+Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7fc1f8c035b0
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c036a0
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c03560
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c036f0
+Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7fc1f8c035b0
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c036a0
+Warning : The node with the address does not exist in the Fibonacci_Heap. No change.0x7fc1f8c03650
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c03650
+Warning : New key is greater than current key at the node with address. No change.0x7fc1f8c036f0
 MST : 
 ( NULL -->     a, weight =     0)
 (    a -->     b, weight =     4)
