@@ -187,7 +187,6 @@ int main(){
     std::cout<<"-----------------Prim_Algorithm::InitialSet-----------------"<<std::endl;
     Prim_Algorithm::InitialSet(fib_heap_q, all_node, map_node_ll2ft);
     fib_heap_q.Traverse();
-
     std::cout<<"-----------------Prim_Algorithm::FindMST-----------------"<<std::endl;
     Prim_Algorithm::FindMST(fib_heap_q, final_mst, map_node_ft2ll, map_node_st2ll, map_node_ll2ft, a1);
     Prim_Algorithm::PrintMST(final_mst, 5);
