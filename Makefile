@@ -1,9 +1,9 @@
 #declare variable
 CC = g++
-INCLUDE_FILES = ./include ../Fibonacci_Heap_ex/include ../Linked_List_ex/include ../Adjacent_List/include
+INCLUDE_FILES = ./include ../Fibonacci_Heap_ex/include ../Linked_List_ex/include ../Adjacent_List/include ../MST_Edge/include
 INCLUDE_FLAGS = $(foreach d, $(INCLUDE_FILES), -I $d)
 CTAGS_UTIL = /usr/local/bin/
-CTAGS_FILES = ./include ../Fibonacci_Heap_ex ../Fibonacci_Heap_ex/include ../Linked_List_ex ../Linked_List_ex/include ../Adjacent_List ../Adjacent_List/include
+CTAGS_FILES = ./include ../Fibonacci_Heap_ex ../Fibonacci_Heap_ex/include ../Linked_List_ex ../Linked_List_ex/include ../Adjacent_List ../Adjacent_List/include ../MST_Edge/include
 CTAGS_FLAGS = $(foreach d, $(CTAGS_FILES),-a $d/*)
 CFLAGS = -g -Wall -O3 -std=c++11 
 COMPILE_FLAGS = -c

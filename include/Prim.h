@@ -7,25 +7,7 @@
 #include <Fibonacci_Heap.h>
 #include <Linked_List.h>
 #include <AdjList.h>
-
-class MST_Edge{
-    LinkedListNode* edge_a;
-    LinkedListNode* edge_b;
-    int weight;
-
-    public : 
-        MST_Edge() : edge_a(NULL), edge_b(NULL), weight(0){};
-        MST_Edge(const int weight_val) : edge_a(NULL), edge_b(NULL), weight(weight_val){};
-        MST_Edge(LinkedListNode* const a_node, LinkedListNode* const b_node, const int weight_val) : edge_a(a_node), edge_b(b_node), weight(weight_val){};
-        ~MST_Edge(){std::cout<<"It is MST_Edge destructor."<<std::endl;edge_a = NULL;edge_b = NULL;weight = 0;};
-
-        inline void            SetEdgeA(LinkedListNode* const a_node){edge_a = a_node;};
-        inline void            SetEdgeB(LinkedListNode* const b_node){edge_b = b_node;};
-        inline void            SetWeight(const int weight_val){weight = weight_val;};
-        inline LinkedListNode* RetEdgeA(){return edge_a;};
-        inline LinkedListNode* RetEdgeB(){return edge_b;};
-        inline int             RetWeight(){return weight;};
-};
+#include <MST_Edge.h>
 
 namespace Prim_Algorithm{
     void InitialSet(Fibonacci_Heap &fib_heap_q, const std::vector<LinkedListNode*> &all_node, std::unordered_map<LinkedListNode*, FTNode*> &map_node_ll2ft);
